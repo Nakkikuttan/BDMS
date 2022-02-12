@@ -17,4 +17,16 @@ Requirements:\
   -> tkinter module\
 
 Procedure:\
+        
+   -Install MySQL from https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.28.0.msi \
+   -Remember the password in the setup\
+   -Open Python IDLE or shell or command prompt and choose your path where it is downloaded and run\
+    ![image](https://user-images.githubusercontent.com/78297271/153719381-990ec37e-e7de-4646-97e6-dfb9d867f0b6.png) \
+   -The Application will open
+   
+
 Important Notes:\
+        
+        -Type and save the password you choose in mysql installer in Resources/pas.txt \
+        -If no password stored just run the commands as in the Procedure
+        

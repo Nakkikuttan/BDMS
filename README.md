@@ -1,6 +1,6 @@
 # An Amatuerish Python App to maintain Bank Client Data
 
-1. The App shows a Log-In Screen for the empployee running the program.
+1. The App shows a Log-In Screen for the employee running the program.
 2. Log-In using EmpName in the mysql table 'emp', in a seperate database 'bankdata'
     - If no such database, automatically creates database 'bankdata' and proceeds to create mysql table 'emp'
     - If database is present but no table 'emp', automatically creates

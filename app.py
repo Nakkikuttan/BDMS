@@ -25,7 +25,7 @@ create2='create table cdata(CustomerName varchar(30) not null primary key,\
 CustomerID int not null,AccountNo int not null, Balance decimal(15,2) not null default 0.00,\
 Address varchar(50),PhoneNo int not null,AadhaarNo int not null)'
 
-trycon=msc.connect(host='localhost',user='root',passwd=f'{pss}',auth_plugin=mnp)
+trycon=msc.connect(host='localhost',user='root',passwd=f'{pss}',db='bankdata',auth_plugin=mnp)
 trycur=trycon.cursor()
 
 def pressmainM():
@@ -36,14 +36,13 @@ def pressmainM():
         # creates Table 'cdata'
         global mycon
         global mycursor
-        trycur.execute('use bankdata')
         try:
             trycur.execute('select * from cdata')
             trycon.close()
             mycon=msc.connect(host='localhost',user='root',
             passwd=f'{pss}',db='bankdata',auth_plugin=mnp
             )
-            print('Table "cdata" Present\nMySQL is connected!!\n')
+            print('Table "cdata" Present\n')
         except msc.Error:
             trycur.execute(create2)
             trycon.close()
@@ -52,7 +51,7 @@ def pressmainM():
             )
             print('Created Table: cdata\n')
         mycursor=mycon.cursor()
-        print('Good to go!!')
+        print('Logged-In\nGood to go!!')
         app()
         break
 

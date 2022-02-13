@@ -32,7 +32,7 @@ while True:
 def registernew():
     new=tk.Toplevel(lr)
     new.title('Register Now')
-    new.geometry('500x200')
+    new.geometry('350x200')
     new.configure(bg=bgw)
 
     frmrn=tk.Frame(new)
@@ -67,7 +67,10 @@ def registernew():
         new.destroy()
     brn=tk.Button(lblrn, text='Register',width=10,
     bg='blue',command=backtologin)
-    brn.place(x=110,y=160)
+    brn.place(x=80,y=160)
+
+    Button(lblrn,text='Back', bg='blue',fg='white',
+    width=10,command=new.destroy).place(x=170,y=160)
 
 def login():
     global lr
@@ -152,7 +155,11 @@ def login():
                 rbtn=tk.Button(rlbl,text='Register Now!!',
                 relief='raised', bg='blue',fg='white',
                 width=10,command=gotoregister)
-                rbtn.place(x=110,y=45)
+                rbtn.place(x=55,y=45)
+
+                Button(rlbl,text='Back',bg='blue',fg='white',
+                width=10,command=rn.destroy
+                ).place(x=150,y=45)
         else:
             rn=tk.Toplevel(lr)
             rn.title('Login Failure!!')
@@ -177,7 +184,11 @@ def login():
             rbtn=tk.Button(rlbl,text='Register Now!!',
             relief='raised', bg='blue',fg='white',
             width=10,command=gotoregister)
-            rbtn.place(x=110,y=45)
+            rbtn.place(x=55,y=45)
+            
+            Button(rlbl,text='Back',bg='blue',fg='white',
+            width=10,command=rn.destroy
+            ).place(x=150,y=45)
 
     #Function and Button to Update Record
     blogin=tk.Button(lbl,text='Login',

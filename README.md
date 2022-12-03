@@ -10,9 +10,7 @@
     - Then it will show options to the Main Menu and Quit from the System
 
 
-## To-Read
-<details>
-<summary>Requirements:</summary>
+## Requisites:
 
 #### Database
 - ##### [MySQL](https://mysql.com)
@@ -33,7 +31,6 @@
     ``py -m pip tk``\
     in your shell or command prompt
 
-</details>
 
 ### Procedure:     
    1. Remember the password in the MySQL setup

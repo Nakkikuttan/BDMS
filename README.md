@@ -1,4 +1,4 @@
-# An Amatuerish Python App to maintain Bank Client Data
+# An  Python App to maintain Bank Client Data
 
 1. The App shows a Log-In Screen for the employee running the program.
 2. Log-In using EmpName in the mysql table 'emp', in a seperate database 'bankdata'
